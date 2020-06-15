@@ -3,12 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     app: './src/index.js',
-    log: './src/js/logger.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true,
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: 'Tooling hometask, webpack project from scratch'
     }),
@@ -17,7 +22,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
   },
-  mode: 'none',
   module: {
     rules: [
       {
