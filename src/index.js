@@ -1,4 +1,5 @@
 import * as logger from './js/logger';
+import './css/fonts.css';
 import './css/style.css';
 import sampleIcon from './assets/img/animal.svg';
 
@@ -21,3 +22,7 @@ logger.log();
 
 document.body.appendChild(createMessage());
 document.body.appendChild(createIcon());
+
+if (process.env.NODE_ENV !== 'production') {
+  console.log('you are in dev mode');
+}

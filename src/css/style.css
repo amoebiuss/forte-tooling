@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "MuseoModerno";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/museomoderno-v1-latin-regular.woff2") format("woff2"),
-    url("../assets/fonts/museomoderno-v1-latin-regular.woff") format("woff");
-}
-
 .container {
   min-height: 128px;
   font-family: "MuseoModerno", Arial, Helvetica, sans-serif;
