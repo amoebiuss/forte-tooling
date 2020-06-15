@@ -2,4 +2,5 @@
 node_modules/
 
 # Build / generate output
-dist/bundle.js
+dist/*
+!dist/index.html

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "MuseoModerno";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/museomoderno-v1-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/museomoderno-v1-latin-regular.woff") format("woff");
+}
+
+.container {
+  min-height: 128px;
+  font-family: "MuseoModerno", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-image: url("../assets/img/bear.png");
+  background-repeat: repeat-x;
+  background-size: 100% cover;
+}
